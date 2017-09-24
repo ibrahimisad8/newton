@@ -1,0 +1,391 @@
+/* 
+    Document   : layout
+    Created on : Aug 29, 2013, 2:11:14 AM
+    Author     : Ibrahim Is
+    Description: Front end user design 
+*/
+
+/*-----------------------------------------------------------------------------------*/
+/*                                      Imports                                      */
+/*-----------------------------------------------------------------------------------*/
+
+@import url(Button.css);
+
+@import url(message.css);
+
+/*-----------------------------------------------------------------------------------*/
+/*                                    Page Design                                    */
+/*-----------------------------------------------------------------------------------*/
+
+body
+{    
+    background  : #fff;
+    font-family : 'Arial';
+    color       : #333; 
+    padding     : 0px;
+    margin      : 0px;
+}
+
+.control-top
+{
+    
+    border-bottom      : 1px solid #BBB;
+    padding            : 11px;
+    position           : fixed;
+    top                : 0px;
+    width              : 100%;
+    -webkit-box-shadow : 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow    : 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow         : 0 1px 2px rgba(0, 0, 0, 0.1);
+    background         : #FFF; 
+}
+
+logo,nav
+{    
+    height : 67px;
+    
+}
+
+logo
+{
+    width      : 35%;
+    float      : left;
+}
+
+nav
+{
+    width         : 61%;
+    float         : right;
+    padding-right : 11px;
+}
+
+nav  ul
+{
+    padding : 0px;margin:0px
+}
+
+nav  ul .home-link
+{
+  background: url('../images/icons/home.png') center no-repeat;
+}
+
+nav ul li
+{
+        font-family        : Tahoma;
+	font-size          : 13px;
+        height             : 67px;
+        float              : right;
+	color              : #333;
+        text-align         : center;
+        display            : inline-block;
+        line-height        : 67px; 
+        padding            : 0px 15px;
+        margin             : 0px;
+        -webkit-transition : all 0.2s ease-in-out;
+        -moz-transition    : all 0.2s ease-in-out;
+        -ms-transition     : all 0.2s ease-in-out;
+        -o-transition      : all 0.2s ease-in-out;
+        transition         : all 0.2s ease-in-out;
+    
+}
+
+nav ul li:hover
+{
+        color            : #BBB;
+	text-decoration  : none;
+
+}
+
+nav ul li a
+{
+    text-decoration : none;
+    color           : #333;
+}
+
+nav ul li a:hover
+{
+    text-decoration : underline; 
+}
+
+nav  ul .home-link
+{
+  background : url('../images/icons/home.png') center no-repeat;
+  cursor     : pointer;
+  width      : 21px;
+}
+
+.main-wrapper
+{
+    
+    display : block;
+    width   : 835px;
+    margin  : 95px auto 0px auto 
+}
+
+.main-wrapper .page
+{
+    display     : block;
+    overflow    : hidden;
+    min-height  : 554px; 
+    font-weight : 300; 
+}
+
+.main-wrapper .page .account-dashboard
+{
+    border        : 1px solid #BBB;
+    padding       : 9px;
+    border-radius : 0px 0px 9px 9px; 
+    font-size     : 13px;
+    color         : #666;
+    font-weight   : 500; 
+    margin-bottom : 45px; 
+}
+
+.main-wrapper .page .account-dashboard
+{
+    
+}
+
+.main-wrapper .page .account-dashboard td
+{
+    padding : 5px; 
+}
+
+.main-wrapper .page .account-dashboard h3
+{
+    border-bottom : 1px dotted #BBB;
+    padding       : 11px 3px; 
+}
+
+.main-wrapper .page .account-dashboard .account-login a
+{
+    text-decoration : none;
+    color           : #666;
+}
+.main-wrapper .page .account-dashboard .account-login a:hover
+{
+    text-decoration    : none;
+    color              : #BBB;
+    -webkit-transition : all 0.5s ease-in-out;
+    -moz-transition    : all 0.5s ease-in-out;
+    -ms-transition     : all 0.5s ease-in-out;
+    -o-transition      : all 0.5s ease-in-out;
+    transition         : all 0.5s ease-in-out;
+}
+
+.main-wrapper .page h1
+{
+    color          : #555;
+    border         : 1px solid #BBB;
+    border-top     : 7px solid #BBB;
+    padding        : 9px 11px; 
+    font-size      : 17px; 
+    margin-bottom  : 15px;
+    background     : #FFF; 
+    font-family    : 'Arial';
+    text-transform : uppercase;
+}
+
+.main-wrapper .page h1 span
+{
+    font-size : 21px; 
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*                                      Home Page                                    */
+/*-----------------------------------------------------------------------------------*/
+
+.home-wrapper
+{
+    height     : 541px;
+    margin-top : 75px;
+    background : transparent;
+    overflow   : hidden;
+    width      : 100%; 
+    border-top : 1px solid #BBB;
+}
+
+.home-wrapper .info
+{   
+    width              : auto;
+    float              : right;
+    text-shadow        : 0px 2px 2px rgba(0, 0, 0, 0.4);
+    margin             : 95px 45px;
+    background         : #fefefe;
+    padding            : 15px;
+    border             : 1px solid #BBB;
+    border-radius      : 9px;
+    -webkit-box-shadow : -5px 1px 48px 0px  rgba(0, 0, 0, 0.1);
+    -moz-box-shadow    : -5px 1px 48px 0px  rgba(0, 0, 0, 0.1);
+    box-shadow         : -5px 1px 48px 0px  rgba(0, 0, 0, 0.1);
+
+}
+
+.home-wrapper .info h1 
+{
+    font-size      : 37px;
+    color          : #555;
+    font-family    : "Arial";
+    font-style     : normal;
+    font-weight    : 700;
+    text-transform : uppercase;
+    line-height    : 39px;
+    margin         : 0px;
+ 
+
+}
+
+.home-wrapper .info h2
+{
+    font-weight    : normal;
+    margin         : 5px 0 0 0;
+    text-transform : uppercase;
+    font-size      : 14px; 
+} 
+
+.home-wrapper .enter
+{
+    margin : 15px 0 0 0;
+}
+
+.footer
+{
+    background : #333;
+    color      : #666;
+    padding    : 11px;
+    font-size  : 13px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                      Track                                        */
+/*-----------------------------------------------------------------------------------*/
+
+.scroll-edit::-webkit-scrollbar
+{
+    width : 11px;
+    height: 11px;
+	
+}
+ 
+.scroll-edit::-webkit-scrollbar-track
+{
+    background            : rgba(31,0,0,0.1); 
+    -webkit-border-radius : 0px;
+    border-radius         : 0px;
+    border-left : 1px solid #BBB;
+    
+}
+ 
+.scroll-edit::-webkit-scrollbar-thumb 
+{
+    -webkit-border-radius : 0px;
+    border-radius         : 0px;
+    cursor                : pointer;
+    background-color      : #CCC;
+    -webkit-box-shadow    : inset 1px 1px 0 rgba(0, 0, 0, 0.10),inset 0 -1px 0 rgba(0, 0, 0, 0.07);
+
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                      Table                                        */
+/*-----------------------------------------------------------------------------------*/
+
+.tab_admin
+{
+	font-family     : "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width           : 100%;
+	border-collapse : collapse;
+	margin-left     : auto;
+	margin-right    : auto;
+        /*border          : 1px solid #DDD;*/
+        text-align      : center; 
+        padding         : 5px; 
+        
+}
+
+.tab_admin a
+{
+    text-decoration : none;
+    color           : #666;
+}
+.tab_admin a:hover
+{
+    text-decoration : underline;
+}
+
+.tab_admin td, .tab_admin th
+{
+	font-size      : 13px;
+	border         : 1px solid #DDD;
+	padding        : 9px 7px 9px 7px;
+}
+
+.tab_admin td img
+{
+   width         : 65px;
+   height        : 65px;
+   border-radius : 5px;
+  
+}
+
+.tab_admin tr
+{
+   -webkit-transition : all 0.5s ease-in-out;
+   -moz-transition    : all 0.5s ease-in-out;
+   -ms-transition     : all 0.5s ease-in-out;
+   -o-transition      : all 0.5s ease-in-out;
+   transition         : all 0.5s ease-in-out; 
+}
+
+.tab_admin tr:hover
+{
+    background : rgb(247, 243, 201);
+}
+
+.tab_admin th
+{
+    font-size        : 13px;
+    text-align       : left; 
+    background-color : #EEE;       
+}
+
+.tab_admin tr.alt td
+{
+	color            : #000;
+	background-color : #EAF2D3;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                       Forum                                       */
+/*-----------------------------------------------------------------------------------*/
+
+.forum-design
+{
+    display : block;
+}
+
+.forum-design .forum-top
+{
+    padding  : 15px 0px;
+    overflow : hidden;
+    height   : 85px;
+    background : red; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                  Users Home Page                                  */
+/*-----------------------------------------------------------------------------------*/
+.users-home
+{
+    display : block;
+}
+
+.users-home .functions
+{
+    border : 1px solid #BBB;
+    width  : 275px;
+    height : 157px;
+    float  : left;
+}

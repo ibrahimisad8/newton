@@ -1,0 +1,90 @@
+/** 
+ *   Document    : Admin form attributes
+ *   Created on  : Mar 30, 2013, 6:31:57 PM
+ *   Author      : Se7en
+ */
+
+/*-----------------------------------------------------------------------------------*/
+/*                                    Admin Button                                   */
+/*-----------------------------------------------------------------------------------*/
+
+.admin-button-one 
+{
+    background         : #DDD;
+    border             : 1px solid #BBB;
+    padding            : 5px 15px;
+    text-decoration    : none;
+    color              : #666;
+    font-size          : 13px;
+    cursor             : pointer;
+    -webkit-transition : all 0.5s ease-in-out;
+    -moz-transition    : all 0.5s ease-in-out;
+    -o-transition      : all 0.5s ease-in-out;
+    transition         : all 0.5s ease-in-out;
+    text-transform     : uppercase;
+} 
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*                                     Form inputs                                   */
+/*-----------------------------------------------------------------------------------*/
+
+
+.admin-label-one
+{
+    display : inline-block;
+    width   : 150px;
+}
+
+.admin-input-one
+{
+   width                 : 285px;
+   border                : 1px solid #CCC;
+   padding               : 9px 5px;
+   color                 : #888;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*                                   Check Box                                       */
+/*-----------------------------------------------------------------------------------*/
+
+.admin-checkbox 
+{
+	display : none;
+}
+
+.admin-checkbox + label 
+{
+	background-color : #fafafa;
+	border           : 1px solid #cacece;
+	box-shadow       : 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding          : 9px;
+	border-radius    : 3px;
+	display          : inline-block;
+	position         : relative;
+}
+
+.admin-checkbox + label:active, .admin-checkbox:checked + label:active 
+{
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.admin-checkbox:checked + label 
+{
+	background-color : #e9ecee;
+	border           : 1px solid #adb8c0;
+	box-shadow       : 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color            : #99a1a7;
+}
+
+.admin-checkbox:checked + label:after 
+{
+	content   : '\2714';
+	font-size : 14px;
+	position  : absolute;
+	top       : 0px;
+	left      : 3px;
+	color     : #99a1a7;
+}

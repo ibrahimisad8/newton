@@ -1,0 +1,752 @@
+/* 
+ *   Document    : light box display
+ *   Created on  : Mar 30, 2013, 6:31:57 PM
+ *   Author      : Ibrahim Isa
+ *   Description : Light Box
+ */
+
+/*----------------------------------------------------------------------------*/
+/*                             Box Styles                                     */
+/*----------------------------------------------------------------------------*/
+
+@charset "utf-8";
+
+.ovl
+{	
+    width      : 100%;
+    height     : 100%;
+    background : #000;
+    position   : fixed;
+    z-index    : 1700;
+    opacity    : 0.7;
+    display    : none;
+    top        : 0px;
+}
+	
+.ovl_message
+{
+    position    : fixed;
+    height      : 15%;
+    background  : #FFF;
+    border      : 1px solid #BBB;
+    z-index     : 1900;
+    color       : #555;
+    font-family : 'Arial';
+    display     : none;
+    font-size   : 13px; 
+    -webkit-box-shadow : 1px 1px 16px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow    : 1px 1px 16px rgba(50, 50, 50, 0.3);
+    box-shadow         : 1px 1px 16px rgba(50, 50, 50, 0.3);
+    
+}
+
+.wantPad
+{
+    padding : 15px;
+}
+
+.ovl_message #hold_close
+{	
+    text-align : right;
+    padding    : 7px 7px 0px 0px ;
+}
+
+.ovl_message #loadSystem{font-size: 13px;}
+
+.ovl_message #loadSystem #reqMargin{margin   : 25% auto;}
+
+.ovl_message #hold_close #close
+{
+    display : block;
+    float   : right;
+    cursor  : pointer;        
+}
+.ovl_message  #notice
+{	
+    border-bottom : 1px dotted #BBBBBB;
+    padding       : 5px;
+}
+
+.ovl_message  #notice #img_hold{
+
+  width:35px;
+  height:35px;
+  background:url('../images/lightbox/info.png') no-repeat;	
+}
+
+.ovl_message  #notice #warNing{
+
+  width:35px;
+  height:35px;
+  background:url('../images/lightbox/warning.png') no-repeat;	
+}
+/*----------------------------------------------------------------------------*/
+/*                                    Logout                                  */
+/*----------------------------------------------------------------------------*/
+.ovl_message #logout h3 
+{
+    text-align  : center;	
+}
+.ovl_message #logout #yes_no
+{
+    padding-top : 15px;
+    text-align  : center;
+    margin      : 0px auto;	
+}
+/*----------------------------------------------------------------------------*/
+/*                           general content                                  */
+/*----------------------------------------------------------------------------*/
+.ovl_message #content
+{	
+    color : #666;
+}
+.ovl_message #content #conTact
+{
+    font-size   : 13px;
+    margin-top  : 11px;
+    padding-top : 9px;
+    border-top  : 1px dotted #BBB;
+}
+.ovl_message #content #conTact p
+{
+    margin-bottom : 7px;		
+}
+.ovl_message #content #input_hold_dailog .err_side
+{
+    font-size    : 13px;
+    color        : #F55;
+    padding-left : 19px;
+    background   : url('../images/lightbox/8.png') no-repeat;
+    display      : none;	
+}
+.ovl_message #content #input_hold_dailog #mes_age
+{
+    padding    : 9px 0px;
+    height     : 25px;
+    text-align : center
+}
+.ovl_message #content #input_hold_dailog #hold_bottom
+{
+    margin-top  : 9px;
+    padding-top : 11px;
+    border-top  : 1px dotted #BBBBBB;
+    text-align  : center	
+}
+
+.ovl_message #content #input_hold_dailog h3
+{	
+   border-bottom : 1px dotted #BBBBBB;
+   padding       : 0px 0px 9px 0px;
+   margin-top    : 0px;	
+}
+
+.ovl_message #content #input_hold_dailog label
+{
+    display   : inline-block;
+    width     : 25%;
+    font-size : 13px;	
+}
+
+.ovl_message #content #input_hold_dailog .border
+{	
+    font-size : 13px;
+    padding   : 9px;
+    border    : #BBBBBB 1px solid;
+    color     : #333;
+    width     : 230px;
+    outline   : none;		
+}
+
+.ovl_message #content #input_hold_dailog .border2
+{	
+    font-size : 13px;
+    padding   : 9px;
+    border    : #BBBBBB 1px solid;
+    color     : #333;
+    width     : 299px;
+    outline   : none;	
+}
+.ovl_message #content #input_hold_dailog #vProf
+{	
+    overflow : hidden;
+    padding  : 0px 25px 0px 11px;
+}
+.ovl_message #content #input_hold_dailog #vProf fieldset{
+	
+ border:1px solid #BBB;
+ font-size:13px;
+ /*-webkit-box-shadow: 1px 0px 16px rgba(50, 50, 50, 0.2);
+-moz-box-shadow:    1px 0px 16px rgba(50, 50, 50, 0.2);
+box-shadow:         1px 0px 16px rgba(50, 50, 50, 0.2);*/
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+	
+}
+.ovl_message #content #input_hold_dailog #vProf fieldset input{
+	font-size:13px;
+	color:#999;
+	
+}
+.ovl_message #content #input_hold_dailog #vProf fieldset legend{
+	font-size:14px;
+	font-weight:bold;
+	}
+	
+.ovl_message #content #input_hold_dailog #vProf fieldset .pAlt{
+	border-bottom: 1px dotted #BBBBBB;
+	padding-bottom:13px;
+	
+}
+.ovl_message #content #input_hold_dailog #vProf fieldset .IMg{
+	
+	border: 1px solid #DDD;
+	width: 117px;
+	height:117px;
+	padding:5px;
+	
+	
+}
+.ovl_message #content #input_hold_dailog #vProf #left{
+
+width:49%;float:left;	
+}
+.ovl_message #content #input_hold_dailog #vProf #right{
+
+width:49%;float:right;	
+}
+/*-------------------- Button -----------------------*/
+
+#button_dailog{
+	
+	background: #DDD;
+	border:1px solid #BBB;
+	border-radius: 3px;
+	padding: 5px 15px ;
+	text-decoration:none;
+	color:#666;
+	margin:0px 5px;
+	font-size:13px;
+}
+
+#button_dailog:hover{
+	
+	-webkit-box-shadow: 1px 0px 16px rgba(50, 50, 50, 0.3);
+-moz-box-shadow:    1px 0px 16px rgba(50, 50, 50, 0.3);
+box-shadow:         1px 0px 16px rgba(50, 50, 50, 0.3);
+}
+.dialog_error{
+background-color: #F9EDBE;	
+padding: 5px;
+border: 1px solid #F0C36D;
+border-radius: 2px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+font-size:13px;
+margin:0px auto;
+
+	
+	
+}
+/*------------------------------------- Scroll WebKit Design ----------------------------------*/
+#nwuserScroll::-webkit-scrollbar {
+    width: 9px;
+	height:9px;
+	
+	
+}
+ 
+/* Track */
+#nwuserScroll::-webkit-scrollbar-track {
+    background: rgba(31,0,0,0.1); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+/* */
+}
+ 
+/* Handle */
+#nwuserScroll::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+	cursor:pointer;
+  
+	background-color: rgba(0, 0, 0, 0.2);
+   -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.10),inset 0 -1px 0 rgba(0, 0, 0, 0.07);
+
+}
+
+#nwuserScroll::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                         TOOLTIP STYLES                                        */
+/*-----------------------------------------------------------------------------------------------*/
+
+.tTip {cursor:pointer}
+	.tip {color: #333;}
+
+
+.tip {
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	z-index: 500;
+	
+	}
+	
+.tipMid {
+	padding: 6px;
+color: white;
+background: #333;
+font-size: 11px;
+font-weight: bold;
+white-space: nowrap;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,.25);
+-ms-box-shadow: 0 1px 1px rgba(0,0,0,.25);
+-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+}
+.tipBtm {
+	
+background:url('../images/lightbox/down.fw.png') no-repeat center;
+height:5px;
+
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                           Messages                                            */
+/*-----------------------------------------------------------------------------------------------*/
+
+.ibLynks-system-error
+{
+    font-size : 13px;
+    padding   : 13px;
+}
+
+.info-warning-div
+{
+    padding:35px 15px 15px 15px;
+}
+
+/* 
+ *   Document    : light box display
+ *   Created on  : Mar 30, 2013, 6:31:57 PM
+ *   Author      : Se7en
+ *   Description : Light Box
+ */
+
+
+/*-----------------------------------------------------------------------------------*/
+/*                             Light Box Message Holder                              */
+/*-----------------------------------------------------------------------------------*/
+.Light-box-msg
+{   
+    position         : absolute; 
+    overflow         : auto;
+    display          : none; 
+    background-color : #F9EDBE;
+    padding          : 5px;
+    border           : 1px solid #BBB;
+    border-top       : 0px; 
+    font-size        : 13px;
+    margin           : auto;
+    border-radius    : 0px 0px 5px 5px;
+    text-align       : center;
+    font-weight      : bold; 
+    
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*                             Light Box Jquery Loading                              */
+/*-----------------------------------------------------------------------------------*/
+
+.Jquery-loading-middle-hold,.Jquery-message-middle-hold
+{
+
+    position : fixed ;
+    top      : 155px;
+    margin   : 0px auto;
+    left     : 0px;
+    right    : 0px;
+    display  : none;
+    z-index  : 959; 
+    border-radius : 5px;
+  
+}
+
+.Jquery-loading-middle-hold
+{   top                   : 15px;
+    width                 : 45px;
+    height                : 45px;
+    background            : url('../images/general/img-gif/loader.gif') center no-repeat #FFF;
+    border-radius         : 100%;
+    -webkit-border-radius : 100%;
+    -moz-border-radius    : 100%; 
+    border                : 5px solid #585858;
+    cursor                : progress;
+}
+
+.Jquery-message-middle-hold
+{  
+    width       : 295px;
+    padding     : 9px;
+    font-family : 'Arial';
+    background  : #FFF;
+    color       : #555;
+    text-align  : center;
+    font-size   : 13px;
+    border      : 1px solid #DDD;
+   -moz-box-shadow        : 0 2px 4px rgba(0,0,0,.12);
+    -o-box-shadow         : 0 2px 4px rgba(0,0,0,.12);
+    -webkit-box-shadow    : 0 2px 4px rgba(0,0,0,.12);
+    box-shadow            : 0 2px 4px rgba(0,0,0,.12);
+    
+
+}
+
+.generalFadediv
+{	
+    padding       : 0px;
+    margin-bottom : 11px;
+    text-align    : center;
+    display       : none;
+    background    : white url('../images/gif/219.gif') no-repeat center;
+    position      : absolute;
+    opacity       : 0.7;	
+}
+
+.ibLynks-general-header
+{
+    font-size      : 13px;
+    font-weight    : bold;
+    padding        : 15px 9px;
+    text-transform : uppercase;
+    border-bottom  : 1px dotted #BBB;  
+}
+.ibLynks-general-header .raquo 
+{
+    font-size  : 19px;
+}
+.ibLynks-general-content
+{
+
+    font-size      : 13px;    
+    overflow       : hidden;
+    padding-bottom : 9px; 
+
+}
+
+.ibLynks-general-content .jQuery-edges
+{
+    display : block;
+}
+
+
+ 
+ .ibLynks-general-content  .spacing
+ {
+     padding : 13px; 
+ }
+  
+.ibLynks-general-content .ibLynks-general-buttom
+{
+    padding    : 13px 9px;
+    text-align : center;
+    border-top : 1px dotted #BBB;
+    margin-top : 5px; 
+    
+}
+
+.ibLynks-input-content 
+{
+    display : block;
+    padding : 13px;
+} 
+
+.ibLynks-input-content p
+{
+    padding : 5px 0px; 
+}
+
+.ibLynks-input-content label
+{
+    display : inline-block;
+    width   : 150px;
+}
+
+.ibLynks-input-content .jQuery-error-side
+ {
+     font-size    : 13px;
+     color        : #F55;
+     display      : none;
+     padding-left : 19px;
+     background   : url('../root/images/8.png') no-repeat;     
+ }
+
+/*-----------------------------------------------------------------------------------*/
+/*                                Loading middle                                     */
+/*-----------------------------------------------------------------------------------*/
+
+.Jquery-loading-middle-hold,.Jquery-message-middle-hold
+{
+
+    position : fixed ;
+    top      : 155px;
+    margin   : 0px auto;
+    left     : 0px;
+    right    : 0px;
+    display  : none;
+    z-index  : 959; 
+    border-radius : 5px;
+  
+}
+
+.Jquery-loading-middle-hold
+{   top                   : 15px;
+    width                 : 45px;
+    height                : 45px;
+    background            : url('../images/general/img-gif/loader.gif') center no-repeat #FFF;
+    border-radius         : 100%;
+    -webkit-border-radius : 100%;
+    -moz-border-radius    : 100%; 
+    border                : 5px solid #585858;
+    cursor                : progress;
+}
+
+.Jquery-message-middle-hold
+{  
+    width       : 295px;
+    padding     : 9px;
+    font-family : 'Arial';
+    background  : #FFF;
+    color       : #555;
+    text-align  : center;
+    font-size   : 13px;
+    border      : 1px solid #DDD;
+   -moz-box-shadow        : 0 2px 4px rgba(0,0,0,.12);
+    -o-box-shadow         : 0 2px 4px rgba(0,0,0,.12);
+    -webkit-box-shadow    : 0 2px 4px rgba(0,0,0,.12);
+    box-shadow            : 0 2px 4px rgba(0,0,0,.12);
+    
+
+}
+
+.genFadediv-border-radius
+{
+    border-radius : 0px 0px 9px 9px; 
+}
+
+.process-loading
+{
+    display    : none;
+    width      : 31px;
+    height     : 31px;
+    background : url('../images/gif/suc.gif') center no-repeat; 
+    opacity    : 0.7; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                General used class                                 */
+/*-----------------------------------------------------------------------------------*/
+
+.general-delete-sys-one
+{
+  display : none;    
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                 Light Box Buttons                                 */
+/*-----------------------------------------------------------------------------------*/
+
+.light-button-type-one,.light-button-type-two
+{	
+	
+       background         : #585858;
+       border             : 1px solid #555;
+       border-radius      : 3px;
+       padding            : 5px 15px ;
+       text-decoration    : none;
+       color              : #DDD;
+       margin             : 5px 0px;
+       font-size          : 13px;
+       cursor             : pointer;
+	
+}
+
+.light-button-type-two
+{
+       background      : #DDD;
+       border          : 1px solid #BBB;
+       color           : #666;
+       cursor          : pointer; 
+}
+
+.no-button
+{
+      margin-left : 5px; 
+}
+/*-----------------------------------------------------------------------------------*/
+/*                                 Light Box Input                                   */
+/*-----------------------------------------------------------------------------------*/
+
+.light-box-form-content
+{
+    display : block;
+    padding : 9px 15px; 
+}
+
+.light-box-form-content .table-light-one 
+{
+    padding : 0px;
+    margin  : 0px; 
+}
+
+.light-box-form-content .table-light-one td
+{
+    padding : 7px 0px; 
+}
+
+.light-box-form-content label
+{
+    display : inline-block;
+    width   : 150px;
+}
+
+.light-box-form-content .text-input
+{
+    font-size: 12px;
+    padding: 9px;
+    border: #CCC 1px solid;
+    color: #333;
+    width: 230px;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.light-box-form-content .s-jinput,.s-jtarea
+{
+    width  : 415px;
+}
+.light-box-form-content .s-jtarea
+{
+    height : 187px;
+}
+
+.light-box-form-content .s-jtarea-two
+{
+    height : 141px;
+}
+
+.light-box-form-content .date-one
+{
+    width : 121px;
+}
+
+.light-box-form-content .text-disabled
+{
+    color : #777;
+}
+
+
+.light-box-form-content .error-lbox
+{
+    font-size  : 13px;
+    color      : #F55;
+    /*display    : none*/
+    padding-left: 19px;
+    background: url('../images/icons/error-arrow.png') no-repeat;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                 Light Box Content                                 */
+/*-----------------------------------------------------------------------------------*/
+
+.light-box-general-content
+{
+    display  : block;
+    padding  : 17px 15px;
+    overflow : auto;
+}
+.light-box-general-content .light-left-one
+{
+    width : 60%;
+    float : left;
+}
+.light-box-general-content .light-right-one
+{
+    width : 35%;
+    float : right;
+}
+
+.light-box-general-content .norm-title-email
+{
+    text-transform : uppercase; 
+    font-weight    : bold; 
+    font-size      : 11px;
+    border-bottom  : 1px dotted #BBB;
+    background     : #FFF; 
+    display        : block;
+    padding        : 9px 0px;
+}
+
+.light-box-general-content .norm-msg
+{
+    padding        : 9px 0px;
+    margin-bottom  : 25px; 
+}
+
+.norm-title
+{
+    text-transform : capitalize; 
+    font-weight    : bold; 
+    font-size      : 11px;
+    border-bottom  : 1px dotted #BBB; 
+    display        : block;
+    padding        : 9px 0px; 
+}
+
+.fieldset-one
+{
+	
+    border     : 1px dotted #BBB;
+    -webkit-border-radius :5px;
+    -moz-border-radius    :5px;
+    border-radius         :5px;
+	
+}
+.legend-one
+{
+	font-size      : 11px;
+	font-weight    : bold;
+        text-transform : uppercase; 
+}
+.img-url-one
+{
+    height  : 97px;
+    display : block; 
+}
+
+.img-map
+{
+    height  : 155px;
+    width   : 353px;
+    padding : 9px;
+    border  : 1px dotted #BBB
+}
+
+.gen-font-one
+{
+   font-size : 9px;
+   color     : darkred;
+}

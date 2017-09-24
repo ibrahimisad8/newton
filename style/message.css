@@ -1,0 +1,80 @@
+/* 
+    Document   : Buttons
+    Created on : Aug 29, 2013, 2:11:14 AM
+    Author     : Ibrahim Is
+    Description: Front end user design 
+*/
+
+/*-----------------------------------------------------------------------------------*/
+/*                                    Error Message                                  */
+/*-----------------------------------------------------------------------------------*/
+
+.error,.success, .err-active
+{   
+    border           : 1px solid #BBB;
+    padding          : 9px 9px 9px 31px;
+    margin-top       : 13px;
+    background-color :  #FFF;
+}
+
+.error
+{ 
+
+    border     : 1px solid #BBB;
+    padding    : 9px 9px 9px 31px;
+    background : url('../images/general/error.png') no-repeat 5px 6px;
+    font-size  : 13px;  
+    color      : rgb(192, 29, 29);
+	 
+ }
+ 
+ .err-active
+{
+    font-size        : 13px;
+    background       : url('../images/general/error-two.png') no-repeat 3px 6px;
+    color            : #B25900;
+}
+
+.error-lbox
+{
+    font-size  : 13px;
+    color      : #F55;
+    display    : none;
+    padding-left: 19px;
+    background: url('../images/icons/error-arrow.png') no-repeat;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                   Succes Message                                  */
+/*-----------------------------------------------------------------------------------*/
+ 
+ .success
+ {
+     background   : url('../images/general/success.png') no-repeat 5px 6px;
+     font-size    : 13px;
+     color        : rgb(9, 112, 9);
+        
+ }
+ 
+ .margin-bottom
+ {
+      margin-bottom : 0px; 
+ }
+ 
+ .alt-design
+ {
+     border-bottom  : 1px solid #BBB; 
+     margin-bottom  : 15px; 
+ }
+ 
+ .Jquery-field-error
+ {
+    border: 1px solid #FF7575; 
+ }
+ 
+ .Jquery-field-msg
+ {
+     color   : #F55;
+     display : none;
+ }
+ 

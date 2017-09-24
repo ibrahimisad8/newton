@@ -1,0 +1,58 @@
+/**
+ *   Document    : ib-error.css
+ *   Created on  : Mar 28, 2013, 3:05:45 PM
+ *   Author      : Ibrahim Isa ( iblynks.com )
+ *   Description : Handles error disply and message hnadler
+ */
+ 
+/*-----------------------------------------------------------------------------------*/
+/*                                     Error                                         */
+/*-----------------------------------------------------------------------------------*/
+.error,.success
+{    
+     border                 : 1px solid #BBB;
+     padding                : 5px 5px 5px 25px;
+     font-size              : 13px; 
+     -moz-border-radius     : 3px;
+     -webkit-border-radius  : 3px;
+     border-radius          : 3px;
+     
+}
+
+.error
+{
+
+     background             : url('../img/general/error.png') no-repeat 3px 6px #EEE;
+     color                  : rgb(153, 24, 24);	 
+ }
+ 
+ .error_two
+ {
+     font-size    : 13px;
+     color        : #F55;
+     display      : none;
+     padding-left : 19px;
+     background   : url('../images/8.png') no-repeat;     
+ }
+ 
+/*-----------------------------------------------------------------------------------*/
+/*                                     Success                                       */
+/*-----------------------------------------------------------------------------------*/
+ 
+.success
+{   
+    background : url('../img/general/tick.fw.png') no-repeat 3px 6px #EEE;
+    color      : rgb(48, 119, 30);
+	
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                jQuery Error Class                                 */
+/*-----------------------------------------------------------------------------------*/
+
+ .jquery_cssclass {border: 1px solid #FF7575}
+ 
+ 
+/*-----------------------------------------------------------------------------------*/
+/*                    jQuery Admin fixed div for loding & message                    */
+/*-----------------------------------------------------------------------------------*/

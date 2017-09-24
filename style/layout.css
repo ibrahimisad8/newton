@@ -1,0 +1,1134 @@
+/** 
+ *   Document    : Home page layout design
+ *   Created on  : Mar 30, 2013, 6:31:57 PM
+ *   Author      : Se7en
+ */
+
+/*-----------------------------------------------------------------------------------*/
+/*                                      Imports                                      */
+/*-----------------------------------------------------------------------------------*/
+
+@import url(form-attrib.css);
+
+@import url(message.css);
+
+@import url(jscript.css);
+
+@import url('../admin/style/fonts.css');
+
+/*-----------------------------------------------------------------------------------*/
+/*                                    Page Design                                    */
+/*-----------------------------------------------------------------------------------*/
+
+body
+{    
+    background  : #fff;
+    font-family : 'Arial';
+    color       : #333; 
+    padding     : 0px;
+    margin      : 0px;
+    width       : 100%;
+    height      : 100%;
+}
+
+.control-top
+{
+    
+    border-bottom      : 1px solid #BBB;
+    padding            : 11px;
+    position           : fixed;
+    top                : 0px;
+    width              : 100%;
+    -webkit-box-shadow : 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow    : 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow         : 0 1px 2px rgba(0, 0, 0, 0.1);
+    background         : #FFF; 
+    z-index            : 1500; 
+}
+
+.loggedIn
+{
+    position      : fixed;
+    padding       : 7px; 
+    top           : 89px;
+    right         : 25px;
+    text-align    : center;
+    width         : 125px;
+    border        : 1px solid #BBB;
+    background    : #EEE; 
+    font-size     : 11px;
+    z-index       : 1500;
+    border-radius  : 0px 0px 9px 9px;
+    text-transform : uppercase; 
+}
+
+logo,nav
+{    
+    height : 67px;
+    
+}
+
+logo
+{
+    width      : 35%;
+    float      : left;
+}
+
+nav
+{
+    width         : 61%;
+    float         : right;
+    padding-right : 11px;
+}
+
+nav  ul
+{
+    padding : 0px;margin:0px
+}
+
+nav  ul .home-link
+{
+  background: url('../images/icons/home.png') center no-repeat;
+}
+
+nav ul li
+{
+        font-family        : Tahoma;
+	font-size          : 13px;
+        height             : 67px;
+        float              : right;
+	color              : #333;
+        text-align         : center;
+        display            : inline-block;
+        line-height        : 67px; 
+        padding            : 0px 15px;
+        margin             : 0px;
+        -webkit-transition : all 0.2s ease-in-out;
+        -moz-transition    : all 0.2s ease-in-out;
+        -ms-transition     : all 0.2s ease-in-out;
+        -o-transition      : all 0.2s ease-in-out;
+        transition         : all 0.2s ease-in-out;
+    
+}
+
+nav ul li:hover
+{
+        color            : #BBB;
+	text-decoration  : none;
+
+}
+
+nav ul li a
+{
+    text-decoration : none;
+    color           : #333;
+}
+
+nav ul li a:hover
+{
+    text-decoration : underline; 
+}
+
+nav  ul .home-link
+{
+  background : url('../images/icons/home.png') center no-repeat;
+  cursor     : pointer;
+  width      : 21px;
+}
+
+.main-wrapper
+{
+    display : block;
+    width   : 875px;
+    margin  : 95px auto 0px auto 
+}
+
+.main-wrapper .page
+{
+    display     : block;
+    overflow    : hidden;
+    font-weight : 500;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                   Genral Page Conetnt                             */
+/*-----------------------------------------------------------------------------------*/
+
+.general-content
+{
+  border        : 1px solid #BBB;  
+  margin        : 21px 0px 0px 0px ; 
+  color         : #666;
+  overflow      : hidden; 
+  font-size     : 13px;
+}
+.general-content .the-search
+{
+    border-top:1px dashed #BBB;
+    
+}
+.general-content .link-nav
+{
+    padding       :  15px ;
+    border-bottom :  1px solid #BBB; 
+}
+.general-content .link-nav .tab-one td
+{
+    padding-right : 9px; 
+}
+.general-content .the-search .s-img
+{
+    padding : 5px; 
+    border  : 1px dashed #BBB;
+    border-radius : 5px; 
+    width : 103px;
+    height: 103px;  
+}
+.general-success
+{
+     text-align : center;
+     min-height : 235px; 
+}
+.general-success #bottom
+{
+      font-size : 17px; 
+}
+.general-content .top-content
+{
+   padding    : 15px;
+}
+.general-content .top-content .table-one td
+{
+    padding : 11px 3px;
+}
+.general-content .bottom-content
+{
+    border-top : 1px solid #BBB;
+    padding    : 25px 15px;
+}
+.del-x
+{
+    display    : none;
+    width      : 16px;
+    height     : 16px;
+    float      : right;
+    background : url('../images/general/close.png') no-repeat center;
+    cursor     : pointer;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                    Employer Design                                */
+/*-----------------------------------------------------------------------------------*/
+
+.main-wrapper .page .employer
+{
+    display : block; 
+}
+
+.main-wrapper .page .employer .home
+{
+    margin   : 7px 0px;
+    overflow : hidden; 
+    color    : #888;
+}
+
+.main-wrapper .page .employer .home .left
+{
+   width      : 575px;
+   float      : left;
+   border     : 1px solid #BBB;
+   background : url('../images/general/emp-bg.png') no-repeat right #EEE; 
+   height     : 296px;
+}
+
+.main-wrapper .page .employer .home .left .hm-content
+{
+    padding     : 15px 35px;
+}
+
+.main-wrapper .page .employer .home .left .hm-content .small-cont
+{
+    width       : 297px;
+    font-weight : 300;
+}
+
+.main-wrapper .page .employer .home .left h2
+{
+    font-size   : 27px;
+    font-weight : 500; 
+}
+
+.main-wrapper .page .employer .home .right
+{
+   width      : 289px;
+   float      : right;
+   background : #CCC;
+   border     : 1px solid #888;
+   height     : 296px;
+   font-size  : 13px; 
+}
+
+.main-wrapper .page .employer-down
+{
+    display : block;
+}
+
+.main-wrapper .page .employer-down .child
+{
+    padding      : 9px;
+    border-right : 1px solid #BBB;
+    float        : left;
+    width        : 251px;
+    height       : 141px;
+    margin-left  : 15px;
+    font-size    : 13px; 
+}
+
+.main-wrapper .page .employer-down .child h2
+{
+    font-weight    : bold;
+    text-transform : uppercase; 
+    font-size      : 13px; 
+}
+
+.main-wrapper .page .employer-down .child img
+{
+    width  : 65px;
+    height : 65px;
+}
+
+.main-wrapper .page .employer-down .child #info-top
+{
+    height : 63px;
+}
+
+.main-wrapper .page .employer-down .child #info-bot a
+{
+    text-decoration : none;
+    color           : #666;
+    padding         : 5px 15px;
+    background      : #777;
+    color           : #FFF;
+} 
+
+
+/*-----------------------------------------------------------------------------------*/
+/*                                    Job Seeker                               */
+/*-----------------------------------------------------------------------------------*/
+
+.main-wrapper .page .jobSeeker
+{
+    display  : block;
+    margin   : 9px 0px 0px 0px;
+    overflow : hidden;
+}
+
+.main-wrapper .page .jobSeeker .left-job
+{
+    width         : 573px;
+    height        : 293px;
+    float         : left;
+    border        : 1px solid #BBB;
+}
+
+.main-wrapper .page .jobSeeker .left-job #hold-cont
+{
+    padding    : 9px;
+    font-size  : 13px;
+    background : url('../images/general/jobimg.png') no-repeat right bottom; 
+    height     : 273px; 
+    width      : 543px;
+    color      : #666;
+}
+
+.main-wrapper .page .jobSeeker .left-job #hold-cont ul li
+{
+    list-style : disc;
+    padding    : 5px 0px; 
+}
+
+.main-wrapper .page .jobSeeker .left-job #hold-cont h2
+{
+    font-size      : 13px;
+    padding        : 9px 9px;
+    text-transform : uppercase;
+    /*font-weight    : 500; */
+}
+
+.main-wrapper .page .jobSeeker .right-job
+{
+    width         : 289px;
+    height        : 293px;
+    float         : right;
+    border        : 1px solid #BBB;
+    background    : #EEE; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                    Account Dashboard                              */
+/*-----------------------------------------------------------------------------------*/
+
+.main-wrapper .page .account-dashboard
+{
+    border        : 1px solid #BBB;
+    padding       : 9px;
+    font-size     : 13px;
+    color         : #666;
+    font-weight   : 500; 
+    margin        : 19px 0px 0px 0px; 
+}
+
+.main-wrapper .page .account-dashboard h3
+{
+    border-bottom : 1px dotted #BBB;
+    padding       : 11px 3px; 
+}
+
+.main-wrapper .page h1
+{
+    color          : #555;
+    border         : 1px solid #BBB;
+    border-top     : 7px solid #BBB;
+    padding        : 9px 11px; 
+    font-size      : 17px; 
+    margin-bottom  : 0px;
+    background     : #FFF; 
+    font-family    : 'Arial';
+    text-transform : uppercase;
+}
+
+.main-wrapper .page h1 span
+{
+    font-size : 21px; 
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*                                      Home Page                                    */
+/*-----------------------------------------------------------------------------------*/
+
+.home-wrapper
+{
+    height     : 571px;
+    margin-top : 75px;
+    background : transparent;
+    overflow   : hidden;
+    width      : 100%; 
+    border-top : 1px solid #BBB;
+}
+
+.home-wrapper .info
+{   
+    width              : auto;
+    float              : right;
+    text-shadow        : 0px 2px 2px rgba(0, 0, 0, 0.4);
+    margin             : 95px 45px;
+    background         : #fefefe;
+    padding            : 15px;
+    border             : 1px solid #BBB;
+    border-radius      : 5px;
+    -webkit-box-shadow : -5px 1px 48px 0px  rgba(0, 0, 0, 0.1);
+    -moz-box-shadow    : -5px 1px 48px 0px  rgba(0, 0, 0, 0.1);
+    box-shadow         : -5px 1px 48px 0px  rgba(0, 0, 0, 0.1);
+
+}
+
+.home-wrapper .info h1 
+{
+    font-size      : 37px;
+    color          : #555;
+    font-family    : "Arial";
+    font-style     : normal;
+    font-weight    : 700;
+    text-transform : uppercase;
+    line-height    : 39px;
+    margin         : 0px;
+ 
+
+}
+
+.home-wrapper .info h2
+{
+    font-weight    : normal;
+    margin         : 5px 0 0 0;
+    text-transform : uppercase;
+    font-size      : 14px; 
+} 
+
+.home-wrapper .enter
+{
+    margin : 15px 0 0 0;
+}
+
+/*.footer
+{
+    background : #333;
+    color      : #666;
+    padding    : 11px;
+    font-size  : 13px;
+    width      : 855px;
+}*/
+/*.footer
+{
+    background : #FFF;
+    margin     : 0px auto;
+    border     : 1px solid #BBB;
+    color      : #666;
+    padding    : 11px;
+    font-size  : 11px;
+    border-bottom : 7px solid #BBB;
+    position   : fixed;
+    bottom     : 0px;
+    width      : 100%;
+    text-align : center;
+    text-transform : uppercase; 
+}*/
+.footer
+{
+    background : #FFF;
+    margin     : 21px auto 0px auto;
+    border-top : 1px dotted #777;
+    color      : #666;
+    padding    : 11px;
+    font-size  : 13px;
+    bottom     : 0px;
+    width      : 851px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                      Track                                        */
+/*-----------------------------------------------------------------------------------*/
+
+.scroll-edit::-webkit-scrollbar
+{
+    width : 11px;
+    height: 11px;
+	
+}
+ 
+.scroll-edit::-webkit-scrollbar-track
+{
+    background            : rgba(31,0,0,0.1); 
+    -webkit-border-radius : 0px;
+    border-radius         : 0px;
+    border-left           : 1px solid #BBB;
+    
+}
+ 
+.scroll-edit::-webkit-scrollbar-thumb 
+{
+    -webkit-border-radius : 0px;
+    border-radius         : 0px;
+    cursor                : pointer;
+    background-color      : #CCC;
+    -webkit-box-shadow    : inset 1px 1px 0 rgba(0, 0, 0, 0.10),inset 0 -1px 0 rgba(0, 0, 0, 0.07);
+
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                      Table                                        */
+/*-----------------------------------------------------------------------------------*/
+
+.table-min-height
+{
+   min-height : 125px;     
+}
+
+.tab_admin
+{
+	font-family     : "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width           : 100%;
+	border-collapse : collapse;
+	margin-left     : auto;
+	margin-right    : auto;
+        border          : 1px solid #BBB;
+        font-size       : 13px;
+}
+
+.tab_admin a
+{
+    text-decoration : none;
+    color           : #666;
+}
+.tab_admin a:hover
+{
+    text-decoration : underline;
+}
+
+.tab_admin td, .tab_admin th
+{
+	border         : 1px solid #DDD;
+	padding        : 9px 7px 9px 7px;
+        font-size      : 11px; 
+}
+
+.tab_admin td img
+{
+   width         : 65px;
+   height        : 65px;
+   border-radius : 5px;
+  
+}
+
+.tab_admin tr
+{
+   -webkit-transition : all 0.5s ease-in-out;
+   -moz-transition    : all 0.5s ease-in-out;
+   -ms-transition     : all 0.5s ease-in-out;
+   -o-transition      : all 0.5s ease-in-out;
+   transition         : all 0.5s ease-in-out; 
+}
+
+.tab_admin tr:hover
+{
+    background : rgb(247, 243, 201);
+}
+
+.tab_admin th
+{
+    text-align       : left; 
+    background-color : #EEE;
+    text-transform   : uppercase;  
+}
+
+.tab_admin th:first-child
+{
+    text-transform : uppercase;
+}
+
+.tab_admin tr.alt td
+{
+    color            : #000;
+    background-color : #EAF2D3;
+}
+
+.table_actions
+{
+    width  : 100%;
+    margin : 0px; 
+}
+
+.table_actions .edit,.view,.applicant,.email,.interview
+{
+    cursor     : pointer;
+    height     : 23px;
+}
+
+.table_actions .edit
+{
+    background : url('../images/general/edit.png') center no-repeat #EEE;
+    padding    : 3px;
+}
+
+.table_actions .interview
+{
+    background : url('../images/general/inter.png') center no-repeat #EEE;
+    padding    : 3px;
+}
+
+.table_actions .applicant
+{
+    background : url('../images/general/applicant.png') center no-repeat #EEE;
+    padding    : 3px;
+}
+
+.table_actions .email
+{
+    background : url('../images/general/email-one.png') center no-repeat #EEE;
+    padding    : 3px;
+}
+
+.table_actions .view
+{
+    background : url('../images/general/view-two.png') center no-repeat #EEE;
+    padding    : 3px;
+}
+.table_actions .view a
+{
+    display : block;
+    height  : 23px;
+    text-decoration : none; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                       Forum                                       */
+/*-----------------------------------------------------------------------------------*/
+
+.forum-design
+{
+    display : block;
+    padding : 15px 25px; 
+}
+
+.forum-design #forum-top
+{
+    padding    : 35px 0px;
+    overflow   : hidden;
+}
+
+.forum-design #forum-middle
+{
+    border       : 1px solid #BBB;
+    padding      : 9px; 
+    margin       : 0 0 9px 0;
+    border-radius: 9px 9px 0px 0px;
+    background   : #EEE;
+}
+
+.forum-design #forum-middle h3
+{
+    padding       : 5px 0px;
+    border-bottom : 1px dashed #BBB;
+}
+
+.forum-design #empty-tread
+{
+    text-align    : center;
+    font-size     : 15px; 
+    border        : 1px solid #BBB;
+    border-radius : 0px 0px 9px 9px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                  Users Home Page                                  */
+/*-----------------------------------------------------------------------------------*/
+.users-home
+{
+    display : block;
+}
+
+.users-home .functions
+{
+    border : 1px solid #BBB;
+    width  : 275px;
+    height : 157px;
+    float  : left;
+    margin : 21px 21px 0px 0px;
+    -webkit-transition : all 0.7s ease-in-out;
+    -moz-transition    : all 0.7s ease-in-out;
+    -ms-transition     : all 0.7s ease-in-out;
+    -o-transition      : all 0.7s ease-in-out;
+    transition         : all 0.7s ease-in-out;
+}
+
+.users-home .functions i 
+{
+    width      : 75px;
+    height     : 75px;
+    background : center no-repeat;
+    display    : block;
+    margin     : 21px auto 0px auto;
+}
+
+.users-home .functions h3 
+{
+    font-family     : 'Arial';
+    font-weight     : 100;
+    text-transform  : capitalize;
+    display         : block;
+    margin-top      : 9px;
+    font-size       : 15px;
+    text-align      : center; 
+}
+
+.users-home .functions:nth-child(3n+3)
+{
+    margin-right:0;
+}
+
+.users-home .functions:nth-child(3n+4){}
+
+.users-home .functions:nth-child(3n+6){}
+
+.users-home a.functions:link
+{
+    color           : #555;
+    text-decoration : none; 
+}
+
+.users-home a.functions:visited
+{
+    color           : #555;
+    text-decoration : none; 
+}
+
+.users-home a.functions:hover
+{
+    color           : #555;
+    text-decoration : none;
+    background      : #EEE;
+}
+
+/*
+.users-home .func-lastL
+{
+    border-radius : 0px 0px 0px 9px;
+}
+
+.users-home .func-rightL
+{
+    border-radius : 0px 0px 9px 0px;
+}
+*/
+
+/*-----------------------------------------------------------------------------------*/
+/*                                      Upload CV                                    */
+/*-----------------------------------------------------------------------------------*/
+
+.new-cv-file
+{
+    padding : 9px 0px;
+}
+
+.new-cv-file input[type="file"]
+{
+    border:1px solid #BBB;
+    padding:4px 7px 5px 7px;
+    border-radius:3px;
+    background:#EEE; 
+}
+
+.instruction-cv,.upload-cv
+{
+    background : #EEE;
+    margin     : 15px auto 0px auto;
+    width      : 710px;
+    padding    : 9px;
+    border     : 1px dashed #BBB; 
+}
+
+.upload-cv
+{
+    background    : #FFF;
+    padding       : 35px 9px;
+    margin-bottom : 35px; 
+}
+.pdf
+{
+     background    : url('../images/icons/pdf-icon.png') no-repeat center; 
+}
+
+.office
+{
+     background : url('../images/icons/office.png') no-repeat center; 
+}
+
+.no-file
+{
+    background  : url('../images/icons/file.png')no-repeat center; 
+}
+
+
+.upload-cv .center-middle
+{
+   border     : 1px dashed #BBB; 
+   width      : 125px;
+   padding    : 5px 5px 20px 5px; 
+   margin     : 0px auto;
+   border-radius : 5px; 
+}
+
+.upload-cv .center-middle .d-img
+{
+    height     :  95px;
+    display    :  block;
+    border     : 0px; 
+}
+
+.upload-cv .center-middle .info-top
+{
+    height  : 16px; 
+}
+
+
+.upload-cv .center-middle:hover .del-cv
+{
+    display    : block;
+}
+
+.upload-cv .center-middle .del-cv
+{
+    display    : none;
+    width      : 16px;
+    height     : 16px;
+    float      : right;
+    background : url('../images/general/close.png') no-repeat center;
+    cursor     : pointer;
+}
+
+.upload-cv .right-file
+{
+    text-align  : center ;
+    background  : #EEE;
+    margin      : 15px auto 0px auto;
+    width       : 135px;
+    height      : 35px; 
+    border      : 1px dashed #BBB;
+    border-radius : 5px; 
+    background  : url('../images/general/newfile.png') center no-repeat #EEE;
+    
+}
+
+.upload-cv .right-file input[type="file"]
+{
+    display: block !important;
+    width  : 135px !important;
+    height : 35px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    position :absolute !important;
+}
+
+upload ,.new-cv-file
+{
+    display  : block;
+    overflow : hidden;
+    margin   : 0px auto;
+    width    : 727px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*                                Loading & No data                                  */
+/*-----------------------------------------------------------------------------------*/
+.system-loading-one , .no-data-one
+{
+    padding    : 65px 0px;
+    text-align : center;  
+}
+/*-----------------------------------------------------------------------------------*/
+/*                                      Fix Div                                      */
+/*-----------------------------------------------------------------------------------*/
+
+.fix-div-one
+{
+    position : fixed;
+    width    : 843px;
+    top      : 89px;
+    margin   : 0px auto;
+    left     : 0px;
+    right    : 0px;
+    border   : 1px solid #BBB;
+    background : #FFF;
+    z-index    : 1500;
+}
+/*-----------------------------------------------------------------------------------*/
+/*                                         Search Result                             */
+/*-----------------------------------------------------------------------------------*/
+.search-result
+{
+    display  : block;
+    overflow : hidden;
+}
+
+.search-result .result-child
+{
+    border-bottom : 1px solid #DDD;
+    padding       : 7px; 
+}
+
+.search-result .job-count
+{   
+    border         : 1px solid #DDD;
+    text-transform : uppercase;
+    font-size      : 11px;
+    padding        : 17px 9px;
+    background     : #EEE; 
+}
+
+.search-result .job-count .raq
+{
+    font-size     : 15px;
+    margin-left   : 3px; 
+}
+.search-result .result-child:hover
+{
+    background : rgb(247, 243, 201);
+}
+
+.search-result .result-child #job-title
+{
+    font-weight    : bold;
+    text-transform : uppercase;
+    font-size      : 15px; 
+}
+
+.search-result .result-child #job-title .url
+{
+    text-decoration : none;
+    color           : #666;
+}
+.search-result .result-child #job-title .url:hover
+{
+    text-decoration : underline; 
+}
+.search-result .result-child #country
+{
+    font-weight    : 500;
+    text-transform : uppercase;
+    font-size      : 11px;
+}
+
+.search-result .result-child #job-desc
+{
+    font-size    : 11px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*                                       View job                                    */
+/*-----------------------------------------------------------------------------------*/
+.view-search-result
+{
+    display       : block;
+}
+
+.view-search-result .result-hold
+{
+    margin-bottom : 25px;
+    text-align    : justify; 
+}
+
+.view-search-result .result-hold .job-title-top
+{
+    padding       : 9px;
+    background    : #EEE;
+    border        : 1px solid #BBB; 
+    border-bottom : 3px solid #BBB;
+}
+
+.view-search-result .result-hold .user-applied
+{
+    padding    : 5px;
+    background : rgb(247, 243, 201);
+    color      : #B25900;
+    border     : 1px solid #BBB;
+    margin-bottom : 25px; 
+}
+
+.view-search-result .result-hold .job-title-top p
+{
+   margin    : 0px;
+   padding   : 0px;
+   padding   : 5px 0px;
+   font-size : 11px; 
+}
+
+.view-search-result .result-hold .job-title-top .p-one
+{
+    font-size      : 19px;
+    text-transform : uppercase;
+}
+
+.view-search-result .result-hold .job-title-top .p-two
+{
+    font-size      : 13px;
+    text-transform : uppercase;
+}
+
+
+.view-search-result .result-title-block
+{
+    border-bottom : 1px solid #DDD;
+    padding       : 9px;
+    text-transform : uppercase; 
+    font-weight   : bold; 
+}
+
+.view-search-result .result-view
+{
+    padding : 9px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*                                       Job Status                                  */
+/*-----------------------------------------------------------------------------------*/
+
+.pending,.interview,.rejected,.employed
+{
+   text-transform : uppercase;
+   font-size      : 11px; 
+}
+.pending  { color:#FFBF00;}
+.interview{ color:#4D4DFF;}
+.rejected { color:red;}
+.employed { color:#1A6600;}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                     Filter style                                  */
+/*-----------------------------------------------------------------------------------*/
+
+.filter-type-one
+{
+    background    : #EEE;
+    padding       : 9px;
+    border        : 1px solid #DDD;
+    margin-bottom : 13px; 
+}
+
+.filter-type-one select
+{
+    padding   : 7px;
+    font-size : 11px;
+}
+
+.filter-type-one .submit-one
+{
+    padding        : 8px;
+    border         : 1px solid #BBB;
+    background     : #DDD;
+    text-transform : uppercase;
+    font-size      : 11px;
+    color          : #666;
+    cursor         : pointer;
+    font-weight    : bold; 
+}
+.filter-title-one 
+{
+    overflow : hidden; 
+}
+.filter-title-one a
+{
+    border-radius   : 7px 7px 0px 0px;
+    background      : #EEE;
+    padding         : 5px;
+    border          : 1px solid #DDD;
+    width           : 75px;
+    text-align      : center;
+    font-size       : 11px;
+    font-weight     : bold;
+    border-bottom   : 0px; 
+    float           : left;
+    margin-right    : 11px;
+    text-decoration : none; 
+    color           : #666;
+    display         : inline-block; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                     Comments                                      */
+/*-----------------------------------------------------------------------------------*/
+.comment
+{
+    display  : block;
+    overflow : hidden; 
+}
+
+.comment .employer,.admin,.no-comment
+{
+   border  : 1px solid #BBB;
+   padding : 7px;
+   margin-top : 13px;
+}
+.comment .employer
+{
+   background : #FFF;  
+}
+.comment .admin
+{
+   background  : #EEE; 
+}
+.comment .employer:hover .del-x
+{
+    display : block; 
+}
+.comment .admin:hover .del-x
+{
+    display : block; 
+}

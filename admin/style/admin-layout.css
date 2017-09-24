@@ -1,0 +1,728 @@
+/** 
+ *   Document    : Admin layout design
+ *   Created on  : Mar 30, 2013, 6:31:57 PM
+ *   Author      : Se7en
+ */
+
+/*-----------------------------------------------------------------------------------*/
+/*                                     Imports                                       */
+/*-----------------------------------------------------------------------------------*/
+
+@import url(form-attrib.css);
+
+@import url(fonts.css);
+
+@import url(admin-error.css);
+
+/*-----------------------------------------------------------------------------------*/
+/*                                 Admin login design                                */
+/*-----------------------------------------------------------------------------------*/
+
+
+.body-home
+{ 
+    background  : url('../img/general/background.png')  center no-repeat #888888 fixed;
+    font-family : Arial;
+    color       : #666;
+}
+
+.login-admin
+{    
+   width             : 325px;
+   height            : 275px;
+   background        : url('../img/general/noise.png')  #FFF;
+   position          : fixed;
+   margin            : auto;
+   top               : 0px;
+   bottom            : 0px;
+   left              : 0px;
+   right             : 0px;
+   border-radius     : 9px;
+  -webkit-box-shadow : 0px 0px 30px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow    : 0px 0px 30px rgba(50, 50, 50, 0.75);
+   box-shadow        : 0px 0px 30px rgba(50, 50, 50, 0.75);
+}
+
+.login-admin #top
+{
+    padding                         : 9px;
+    font-family                     : 'Tahoma';
+    text-align                      : center;
+    color                           : #777777;
+    font-size                       : 27px;
+    background                      : url('../img/general/noise.png')  #BBB;
+    -webkit-border-top-left-radius  : 5px;
+    -webkit-border-top-right-radius : 5px;
+    -moz-border-radius-topleft      : 5px;
+    -moz-border-radius-topright     : 5px;
+    border-top-left-radius          : 5px;
+    border-top-right-radius         : 5px;
+    display                         : block;
+    border-bottom                   : 1px solid  #333;
+    -webkit-transition : all 0.5s ease-in-out;
+    -moz-transition    : all 0.5s ease-in-out;
+    -o-transition      : all 0.5s ease-in-out;
+    transition         : all 0.5s ease-in-out;
+
+}
+
+.login-admin #top:hover
+{
+    color: #666666
+}
+
+.login-admin #bottom
+{
+    border-top  : 1px solid  #444;
+    padding     : 9px;
+    font-size   : 13px;
+    font-family : Arial;
+    color       : #BBB;
+    
+}
+
+.login-admin #bottom #message_handler{height: 33px;}
+
+.login-admin #bottom #hold-input{ width : 100%; margin-bottom:15px;overflow:hidden}
+
+.login-admin #bottom #hold-input .usr_name{background:url('../img/general/user.png') no-repeat center}
+
+.login-admin #bottom #hold-input .password{background:url('../img/general/lock.png') no-repeat center}
+
+.login-admin #bottom #hold-input #ic_on
+{
+    
+   width                 : 14%;float:left;
+   height                : 23px;
+   text-shadow           : 0 1px 0 #fff;
+   background-color      : #eee;
+   border                : 1px solid #ccc;
+   padding               : 3px;
+   -webkit-border-radius : 7px 0 0 7px;
+   -moz-border-radius    : 7px 0 0 7px;
+   border-radius         : 7px 0 0 7px;
+ 
+}
+
+.login-admin #bottom #hold-input #d_input
+{
+    
+   width                 : 80%;
+   float                 : right;   
+   border                : 1px solid #ccc; 
+   padding               : 3px;
+   height                : 23px;
+   -webkit-border-radius : 0 7px 7px 0;
+   -moz-border-radius    : 0 7px 7px 0;
+   border-radius         : 0 7px 7px 0;
+}
+
+.login-admin #bottom #hold-input #d_input input
+{
+  border : none;
+  height : 23px; 
+  margin : 0px;
+  width  : 100%;
+}
+
+.button_style_one 
+{
+    background         : #DDD;
+    border             : 1px solid #BBB;
+    border-radius      : 7px;
+    padding            : 5px 15px;
+    width              : 100%;
+    text-decoration    : none;
+    color              : #666;
+    font-weight        : bold;
+    font-size          : 17px;
+    cursor             : pointer;
+    -webkit-transition : all 0.5s ease-in-out;
+    -moz-transition    : all 0.5s ease-in-out;
+    -o-transition      : all 0.5s ease-in-out;
+    transition         : all 0.5s ease-in-out;
+}
+
+.button_style_one:hover 
+{
+    -webkit-box-shadow : 1px 0px 16px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow    : 1px 0px 16px rgba(50, 50, 50, 0.3);
+    box-shadow         : 1px 0px 16px rgba(50, 50, 50, 0.3);
+}
+
+.footer-login
+{
+
+    position       : fixed;
+    width          : 100%;
+    bottom         : 0px;
+    padding-bottom : 9px;
+    font-family    : arial;
+
+}
+
+.footer-login a
+{
+    text-decoration : none;
+    color           : #FFF;
+}
+
+.footer-login table
+{
+    
+    width       : 100%;
+    color       : white;
+    font-size   : 13px;
+    text-shadow : 1px 1px 1px #000;   
+}
+
+.footer-login table #cen_ter{text-align:center}
+
+.footer-login table #right_dat{text-align:right;padding-right: 2%;}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                 Admin page design                                 */
+/*-----------------------------------------------------------------------------------*/
+
+.body-body
+{
+    background : #FFF url('../img/general/noise.png'); 
+    padding    : 0px;
+    margin     : 0px;
+    font-size  : 13px;
+    color      : #555;
+    font-family: 'Arial'; 
+}
+
+.system-control
+{
+    background : #585858;
+    width      : 100%;
+    height     : 40px; 
+    position   : fixed; 
+    -webkit-box-shadow : 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow    : 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow         : 0 1px 2px rgba(0, 0, 0, 0.3);
+    top:0px;
+    border-bottom : 1px solid #555;
+    z-index: 1500;
+
+}
+
+.admin-wrapper
+{
+    display : block;
+    width   : 813px;
+    margin  : 0px auto;
+    
+}
+
+.admin-wrapper .system-head
+{
+    border        : 1px solid #BBB;
+    border-bottom : 7px solid #BBB; 
+    margin        : 55px 0px 13px 0px;
+    border-radius : 0px 0px 0px 0px;
+    padding       : 9px; 
+    background    : #EEE; 
+    font-family   : 'Lobster13Regular'; 
+  
+}
+
+.admin-wrapper .system-head page
+{
+    font-size : 17px; 
+}
+
+.admin-wrapper .system-head page span 
+{
+    font-weight : bold;
+    font-size   : 19px;
+}
+
+
+.admin-wrapper .system-footer
+{
+    padding :9px;
+    border-top : 1px dotted #BBB;
+    background : #FFF;  
+    margin-bottom : 13px;
+    border-radius : 0px 0px 0px 0px;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*                                     top - Navigation                              */
+/*-----------------------------------------------------------------------------------*/
+
+.spn_link
+{
+    display        : inline-block;
+    height         : 41px;
+    vertical-align : middle;
+    width          : 20px;
+}
+
+.spn_link .is_img
+{
+  position : absolute;
+  top      : 10px;
+
+}
+
+nav
+{
+    width : 45%;
+    float : left;
+    padding-right: 11px;
+}
+
+nav  ul
+{
+    padding:0px;margin:0px
+}
+
+nav  ul .home-link
+{
+  background: url('../images/icons/home.png') center no-repeat;
+}
+
+nav ul li
+{
+        font-family     : Tahoma;
+	font-size       : 13px;
+        height          : 40px;
+	color           : #FFF;
+        display         : inline-block;
+        line-height     : 40px; 
+        padding         : 0px 10px;
+        -webkit-transition : all 0.2s ease-in-out;
+        -moz-transition    : all 0.2s ease-in-out;
+        -ms-transition     : all 0.2s ease-in-out;
+        -o-transition      : all 0.2s ease-in-out;
+        transition         : all 0.2s ease-in-out;
+    
+}
+
+
+nav ul li:hover
+{
+        color            : #BBB;
+	text-decoration  : none;
+        background: rgba(0,0,0,.12);
+
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color : #FFF;
+}
+
+nav ul li a:hover
+{
+    text-decoration : none; 
+}
+
+.nav-right
+{
+    float:right;
+    width: 55px; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                Function - Navigation                              */
+/*-----------------------------------------------------------------------------------*/
+
+function
+{
+    display :block;
+}
+
+function .child
+{
+    width              : 251px;
+    height             : 142px;
+    border             : 1px solid #BBB;
+    float              : left;
+    margin-right       : 27px;
+    margin-bottom      : 27px;
+    display            : block;
+    -webkit-transition : all 0.5s ease-in-out;
+    -moz-transition    : all 0.5s ease-in-out;
+    -ms-transition     : all 0.5s ease-in-out;
+    -o-transition      : all 0.5s ease-in-out;
+    transition         : all 0.5s ease-in-out;
+}
+
+.child i 
+{
+    width      : 75px;
+    height     : 75px;
+    background : center no-repeat;
+    display    : block;
+    margin     : 11px auto 0px auto;
+}
+
+.child h3 
+{
+    font-family     : 'Arial';
+    font-weight     : 100;
+    text-transform  : capitalize;
+    display         : block;
+    margin-top      : 9px;
+    font-size       : 15px;
+    text-align      : center; 
+}
+
+function .child-end
+{
+    margin-right : 0px; 
+}
+
+function a.child:link
+{
+    color           : #555;
+    text-decoration : none; 
+}
+
+function a.child:visited
+{
+    color           : #555;
+    text-decoration : none; 
+}
+
+function a.child:hover
+{
+    color           : #555;
+    text-decoration : none;
+    background      : #EEE;
+}
+/*-----------------------------------------------------------------------------------*/
+/*                                  Admin Content                                    */
+/*-----------------------------------------------------------------------------------*/
+
+.system-content
+{
+    display:block;
+    overflow:hidden; 
+}
+
+
+content
+{
+    border        : 1px solid #BBB; 
+    display       : block;
+    margin-bottom : 15px;
+}
+
+content .link-nav
+{
+    padding       :  15px ;
+    border-bottom :  1px solid #BBB; 
+}
+
+content .link-nav .tab-one td
+{
+    padding-right : 9px; 
+}
+
+content  .the-search .s-img
+{
+    padding       : 5px; 
+    border        : 1px dashed #BBB;
+    border-radius : 5px; 
+    width         : 103px;
+    height        : 103px;  
+}
+
+content .top-content
+{
+    padding    : 15px;
+}
+
+content .top-content .table-one td
+{
+    padding : 11px 3px;
+}
+
+content .bottom-content
+{
+    border-top : 1px solid #BBB;
+    padding    : 25px 15px;
+}
+
+.admin-general-success
+{
+    text-align : center;
+    min-height : 235px; 
+}
+ 
+.admin-general-success #bottom
+{
+    font-size : 17px; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                      Track                                        */
+/*-----------------------------------------------------------------------------------*/
+
+.scroll-edit::-webkit-scrollbar
+{
+    width : 11px;
+    height: 11px;
+	
+}
+ 
+.scroll-edit::-webkit-scrollbar-track
+{
+    background            : rgba(31,0,0,0.1); 
+    -webkit-border-radius : 0px;
+    border-radius         : 0px;
+    border-left : 1px solid #BBB;
+    
+}
+ 
+.scroll-edit::-webkit-scrollbar-thumb 
+{
+    -webkit-border-radius : 0px;
+    border-radius         : 0px;
+    cursor                : pointer;
+    background-color      : #CCC;
+    -webkit-box-shadow    : inset 1px 1px 0 rgba(0, 0, 0, 0.10),inset 0 -1px 0 rgba(0, 0, 0, 0.07);
+
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                Loading & No data                                  */
+/*-----------------------------------------------------------------------------------*/
+
+
+.system-loading-one , .no-data-one
+{
+    padding    : 135px 0px;
+    text-align : center;  
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*                                     Admin Table                                        */
+/*-----------------------------------------------------------------------------------*/
+
+.table-min-height
+{
+   min-height : 125px;     
+}
+
+.tab_admin
+{
+	font-family     : "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width           : 100%;
+	border-collapse : collapse;
+	margin-left     : auto;
+	margin-right    : auto;
+        border          : 1px solid #BBB;
+        font-size       : 13px;
+}
+
+.tab_admin a
+{
+    text-decoration : none;
+    color           : #666;
+}
+.tab_admin a:hover
+{
+    text-decoration : underline;
+}
+
+.tab_admin td, .tab_admin th
+{
+	border         : 1px solid #DDD;
+	padding        : 9px 7px 9px 7px;
+        font-size      : 11px; 
+}
+
+.tab_admin td img
+{
+   width         : 65px;
+   height        : 65px;
+   border-radius : 5px;
+  
+}
+
+.tab_admin tr
+{
+   -webkit-transition : all 0.5s ease-in-out;
+   -moz-transition    : all 0.5s ease-in-out;
+   -ms-transition     : all 0.5s ease-in-out;
+   -o-transition      : all 0.5s ease-in-out;
+   transition         : all 0.5s ease-in-out; 
+}
+
+.tab_admin tr:hover
+{
+    background : rgb(247, 243, 201);
+}
+
+.tab_admin th
+{
+    text-align       : left; 
+    background-color : #EEE;
+    text-transform   : uppercase;  
+}
+
+.tab_admin th:first-child
+{
+    text-transform : uppercase;
+}
+
+.tab_admin tr.alt td
+{
+    color            : #000;
+    background-color : #EAF2D3;
+}
+
+.table_actions
+{
+    width  : 100%;
+    margin : 0px; 
+}
+
+.table_actions .edit,.view,.applicant,.email,.interview,.change-pswd
+{
+    cursor     : pointer;
+    height     : 23px;
+}
+
+.table_actions .edit
+{
+    background : url('../../images/general/edit.png') center no-repeat #EEE;
+    padding    : 3px;
+}
+
+.table_actions .interview
+{
+    background : url('.../images/general/inter.png') center no-repeat #EEE;
+    padding    : 3px;
+}
+
+.table_actions .applicant
+{
+    background : url('../../images/general/applicant.png') center no-repeat #EEE;
+    padding    : 3px;
+}
+
+.table_actions .email
+{
+    background : url('../../images/general/email-one.png') center no-repeat #EEE;
+    padding    : 3px;
+}
+
+.table_actions .view
+{
+    background : url('../../images/general/view-two.png') center no-repeat #EEE;
+    padding    : 3px;
+}
+
+.table_actions .view a
+{
+    display : block;
+    height  : 23px;
+    text-decoration : none; 
+}
+
+.table_actions .change-pswd
+{
+    background : url('../../images/general/lock.png') center no-repeat #EEE;
+    padding    : 3px;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*                                      Fix Div                                      */
+/*-----------------------------------------------------------------------------------*/
+
+.fix-div-one
+{
+    position : fixed;
+    width    : 781px;
+    top      : 41px;
+    margin   : 0px auto;
+    left     : 0px;
+    right    : 0px;
+    border   : 1px solid #BBB;
+    background : #FFF;
+    z-index    : 1500;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*                                     Filter style                                  */
+/*-----------------------------------------------------------------------------------*/
+
+.admin-filter-one
+{
+    background    : #EEE;
+    padding       : 9px;
+    border        : 1px solid #DDD;
+    margin-bottom : 13px; 
+}
+
+.admin-filter-one select
+{
+    padding   : 7px;
+    font-size : 11px;
+    width     : 225px;
+}
+
+.admin-filter-one .submit-one
+{
+    padding        : 8px;
+    border         : 1px solid #BBB;
+    background     : #DDD;
+    text-transform : uppercase;
+    font-size      : 11px;
+    color          : #666;
+    cursor         : pointer;
+    font-weight    : bold; 
+}
+
+.admin-filter-title-one
+{
+    overflow : hidden; 
+}
+
+.admin-filter-title-one a
+{
+    border-radius   : 7px 7px 0px 0px;
+    background      : #EEE;
+    padding         : 5px;
+    border          : 1px solid #DDD;
+    width           : 75px;
+    text-align      : center;
+    font-size       : 11px;
+    font-weight     : bold;
+    border-bottom   : 0px; 
+    float           : left;
+    margin-right    : 11px;
+    text-decoration : none; 
+    color           : #666;
+    display         : inline-block; 
+}
+/*-----------------------------------------------------------------------------------*/
+/*                                  Job Seeker CV                                    */
+/*-----------------------------------------------------------------------------------*/
+.pdf
+{
+    background : url('../../images/icons/pdf-icon.png') no-repeat center; 
+}
+
+.office
+{
+    background : url('../../images/icons/office.png') no-repeat center; 
+}
+
+.no-file
+{
+    background : url('../../images/icons/file.png')no-repeat center; 
+}
